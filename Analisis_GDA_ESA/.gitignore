@@ -1,0 +1,176 @@
+# ================================================
+# CONFIGURACIÓN GIT PARA PROYECTOS FORESTALES GIS
+# ================================================
+
+# CREDENCIALES Y CONFIGURACIÓN SENSIBLE
+config/credentials/*.json
+config/credentials/*.key
+config/credentials/*.pem
+!config/credentials/*_template.json
+.env
+.env.local
+.env.production
+secrets.yaml
+
+# DATOS GEOESPACIALES (MUY PESADOS PARA GIT)
+data/raw_*/
+data/temp_*/
+data/processed_*/
+!data/**/README.md
+!data/**/metadata.xml
+
+# Archivos específicos GIS
+*.tif
+*.tiff
+*.tfw
+*.img
+*.bil
+*.bip
+*.bsq
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.sbn
+*.sbx
+*.xml
+*.aux
+*.ovr
+*.rrd
+*.lyr
+*.lyrx
+*.qml
+*.qgs
+
+# Geodatabases y bases de datos
+*.gdb/
+*.mdb
+*.accdb
+*.sqlite
+*.db
+
+# ArcGIS
+*.mxd.bak
+*.aprx.bak
+*.tbx.bak
+*.style.bak
+*.lyrx.bak
+Scratch.gdb/
+*.lock
+*.sr.lock
+
+# QGIS
+*.qgs~
+*.qgz
+
+# PYTHON
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# AMBIENTES VIRTUALES
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+conda_env/
+.conda/
+
+# JUPYTER NOTEBOOK
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+.jupyter/
+
+# LOGS Y TEMPORALES
+*.log
+logs/
+temp/
+tmp/
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# CACHE Y COMPILADOS
+*.cache
+.cache/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# SISTEMA OPERATIVO
+# Windows
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# IDEs Y EDITORES
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.netrwhist
+
+# DOCUMENTOS TEMPORALES
+~$*.docx
+~$*.xlsx
+~$*.pptx
+.~lock.*
+
+# ARCHIVOS DE CONFIGURACIÓN LOCAL
+local_settings.py
+local_config.json

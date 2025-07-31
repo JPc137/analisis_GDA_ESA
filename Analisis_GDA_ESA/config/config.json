@@ -1,0 +1,57 @@
+{
+    "project_info": {
+        "name": "Analisis_GDA_ESA",
+        "version": "1.0.0",
+        "created_date": "2025-07-31T08:58:52.844685",
+        "description": "Proyecto de monitoreo forestal con análisis geoespacial",
+        "author": "Equipo de Monitoreo Forestal",
+        "contact": "monitoreo@forestales.org"
+    },
+    "spatial_config": {
+        "coordinate_system": "EPSG:4326",
+        "utm_zone": "14N",
+        "study_area": {
+            "name": "Área de estudio Analisis_GDA_ESA",
+            "bounds": {
+                "min_lat": 0.0,
+                "max_lat": 0.0,
+                "min_lon": 0.0,
+                "max_lon": 0.0
+            }
+        }
+    },
+    "data_sources": {
+        "satellite_imagery": {
+            "landsat": true,
+            "sentinel2": true,
+            "sentinel1": true,
+            "modis": false
+        },
+        "vector_data": {
+            "forest_boundaries": true,
+            "protected_areas": true,
+            "administrative_limits": true,
+            "infrastructure": true
+        },
+        "auxiliary_data": {
+            "dem": true,
+            "climate_data": false,
+            "soil_data": false
+        }
+    },
+    "processing_config": {
+        "cloud_cover_threshold": 20,
+        "temporal_range": {
+            "start_year": 2020,
+            "end_year": 2024
+        },
+        "spatial_resolution": 30,
+        "buffer_distance_m": 100
+    },
+    "output_config": {
+        "coordinate_system": "EPSG:32614",
+        "raster_format": "GeoTIFF",
+        "vector_format": "Shapefile",
+        "compression": "LZW"
+    }
+}

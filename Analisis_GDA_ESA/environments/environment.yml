@@ -1,0 +1,22 @@
+name: analisis_gda_esa
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.9
+  - geopandas
+  - pandas
+  - numpy
+  - matplotlib
+  - rasterio
+  - folium
+  - jupyter
+  - scikit-learn
+  - scipy
+  - pip
+  - pip:
+    - earthengine-api>=0.1.350
+    - python-dotenv
+    - plotly>=5.15.0
+    - tqdm
+    - rich
