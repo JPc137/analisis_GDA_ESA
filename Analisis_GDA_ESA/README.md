@@ -12,8 +12,7 @@ Proyecto de monitoreo forestal con análisis geoespacial desarrollado con herram
   - `outputs/`: Resultados finales y productos
 - `scripts/`: Scripts Python, ArcGIS y Google Earth Engine
 - `documentation_MIAs/`: Documentación técnica y SOPs
-- `reports/`: Reportes generados por fecha
-- `testing/`: Pruebas unitarias e integración
+
 
 ## Tecnologías Utilizadas
 - **Python**: Procesamiento y análisis de datos
